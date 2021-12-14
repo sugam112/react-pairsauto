@@ -11,20 +11,22 @@ function Card() {
           <ul className="cards__items">
             <CardItem
               src="images/card-1.png"
-              text="Oil Change 
-              CONVENTIONAL OIL CHANGE. ( *Up to 5 Liter, after that $4 /Liter )"
+              text="Oil Change"
+              description="CONVENTIONAL OIL CHANGE. ( *Up to 5 Liter, after that $4 /Liter )"
               label="Services"
               path="/services/oil-change"
             />
             <CardItem
               src="images/card-1.png"
               text="AC Recharge"
+              description="ac recharge description"
               label="Services"
               path="/services/ac-recharge"
             />
             <CardItem
               src="images/card-1.png"
               text="Tire Change"
+              description="tire change description"
               label="Services"
               path="/services/tire-change"
             />

@@ -104,6 +104,11 @@ h2 {
   font-size: 18px;
   line-height: 24px;
 }
+.cards__item__description {
+  font-size: 16px;
+  font-weight: 100;
+  color: #000;
+}
 
 @media only screen and (min-width: 1200px) {
   .content__blog__container {
@@ -120,5 +125,11 @@ h2 {
 @media only screen and (max-width: 1024px) {
   .cards__item {
     margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards__container {
+    width: 100%;
   }
 }

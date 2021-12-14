@@ -1,29 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "./Button";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
+  //   const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
+  //   const showButton = () => {
+  //     if (window.innerWidth <= 960) {
+  //       setButton(false);
+  //     } else {
+  //       setButton(true);
+  //     }
+  //   };
 
   //   to not render the button when you refresh useEffect is used
-  useEffect(() => {
-    showButton();
-  }, []);
+  //   useEffect(() => {
+  //     showButton();
+  //   }, []);
 
-  window.addEventListener("resize", showButton);
+  //   window.addEventListener("resize", showButton);
+
   return (
     <>
       <nav className="navbar">
@@ -34,7 +34,7 @@ const Navbar = () => {
               alt="PairsAuto Logo"
             />
           </Link>
-          {/* check timing 20:00 from the video to handle  the hamburger icon toggle */}
+          {/* check timing 20:00 to handle the hamburger icon toggle */}
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
           </div>
@@ -46,7 +46,7 @@ const Navbar = () => {
             </li>
             <li className="nav-items">
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                Services&nbsp;<i className="fas fa-angle-down"></i>
+                Services
               </Link>
             </li>
             <li className="nav-items">
@@ -55,7 +55,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-items">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link
+                to="/AboutUs"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 About Us
               </Link>
             </li>

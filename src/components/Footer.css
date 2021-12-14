@@ -58,6 +58,7 @@
 
 .footer-link-wrapper {
   display: flex;
+  padding: 5% 0;
 }
 
 .footer-link-items {

@@ -111,7 +111,7 @@ audio:not([controls]) {
 
 html {
   /* font-family: sans-serif; */
-  font-family: "PT Sans", sans-serif;
+  /* font-family: "PT Sans", sans-serif; */
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -310,6 +310,9 @@ td {
 }
 
 /* scrollbar */
+html {
+  scroll-behavior: smooth;
+}
 html::-webkit-scrollbar {
   width: 20px;
 }

@@ -58,3 +58,15 @@
   content: "✅ ";
   margin-right: 00.5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+  .highlight-wrapper {
+    width: 100%;
+  }
+  br {
+    display: none;
+  }
+}

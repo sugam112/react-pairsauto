@@ -3,7 +3,6 @@ import "../../App.css";
 import "./Home.css";
 import Card from "../Card";
 import HeroSection from "../HeroSection";
-import Footer from "../Footer";
 
 function Home() {
   return (
@@ -34,7 +33,6 @@ function Home() {
         </div>
       </div>
       <Card />
-      <Footer />
     </>
   );
 }

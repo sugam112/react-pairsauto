@@ -5,18 +5,18 @@ import Footer from "./components/Footer";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import AboutUs from "./components/pages/AboutUs";
-import Home from "./components/pages/Home";
+import Services from "./components/pages/Services";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Navbar />
-        <Home />
+        <Services />
         {/* <AboutUs /> */}
 
         <Routes>
-          <Route path="/Home" exact component={Home} />
+          <Route path="/Services" exact component={Services} />
           {/* <Route path="/AboutUs" exact component={AboutUs} /> */}
         </Routes>
         <Footer />

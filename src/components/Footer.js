@@ -26,24 +26,24 @@ function Footer() {
         </div>
       </section>
 
-      <div class="footer-links">
+      <div className="footer-links">
         <div className="footer-link-wrapper">
-          <div class="footer-link-items">
+          <div className="footer-link-items">
             <h2>
-              Address&nbsp;<i class="fas fa-map-marked-alt"></i>
+              Address&nbsp;<i className="fas fa-map-marked-alt"></i>
             </h2>
             <Link to="/sign-up">3370 32 Street NE, Calgary, AB, T1Y 6B9</Link>
           </div>
-          <div class="footer-link-items">
+          <div className="footer-link-items">
             <h2>
-              Contact Us&nbsp;<i class="fas fa-at"></i>
+              Contact Us&nbsp;<i className="fas fa-at"></i>
             </h2>
             <Link to="/">+1 (403) 800-1806</Link>
             <Link to="/">info@pairsauto.com</Link>
           </div>
-          <div class="footer-link-items">
+          <div className="footer-link-items">
             <h2>
-              Timing&nbsp;<i class="far fa-clock"></i>
+              Timing&nbsp;<i className="far fa-clock"></i>
             </h2>
             <Link to="/">Mon-Sat: 9:30 am – 6:30 pm</Link>
           </div>
@@ -55,59 +55,59 @@ function Footer() {
           width="100%"
           height="300"
           style={{ border: 0 }}
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
           title="location"
         ></iframe>
       </section>
-      <section class="social-media">
-        <div class="social-media-wrap">
-          <div class="footer-logo">
+      <section className="social-media">
+        <div className="social-media-wrap">
+          <div className="footer-logo">
             <Link to="/" className="social-logo">
               PAIRSAUTO
             </Link>
           </div>
-          <small class="website-rights">PAIRSAUTO © 2021</small>
-          <div class="social-icons">
+          <small className="website-rights">PAIRSAUTO © 2021</small>
+          <div className="social-icons">
             <Link
-              class="social-icon-link facebook"
+              className="social-icon-link facebook"
               to="/"
               target="_blank"
               aria-label="Facebook"
             >
-              <i class="fab fa-facebook-f" />
+              <i className="fab fa-facebook-f" />
             </Link>
             <Link
-              class="social-icon-link instagram"
+              className="social-icon-link instagram"
               to="/"
               target="_blank"
               aria-label="Instagram"
             >
-              <i class="fab fa-instagram" />
+              <i className="fab fa-instagram" />
             </Link>
             <Link
-              class="social-icon-link youtube"
+              className="social-icon-link youtube"
               to="/"
               target="_blank"
               aria-label="Youtube"
             >
-              <i class="fab fa-youtube" />
+              <i className="fab fa-youtube" />
             </Link>
             <Link
-              class="social-icon-link twitter"
+              className="social-icon-link twitter"
               to="/"
               target="_blank"
               aria-label="Twitter"
             >
-              <i class="fab fa-twitter" />
+              <i className="fab fa-twitter" />
             </Link>
             <Link
-              class="social-icon-link twitter"
+              className="social-icon-link twitter"
               to="/"
               target="_blank"
               aria-label="LinkedIn"
             >
-              <i class="fab fa-linkedin" />
+              <i className="fab fa-linkedin" />
             </Link>
           </div>
         </div>

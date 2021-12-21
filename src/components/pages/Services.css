@@ -1,0 +1,5 @@
+.content-wrapper {
+  display: grid;
+
+  max-width: 1120px;
+}

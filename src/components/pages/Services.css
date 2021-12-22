@@ -1,5 +1,7 @@
 .content-wrapper {
   display: grid;
-
+  grid-template-columns: repeat(3, auto);
   max-width: 1120px;
+  width: 90%;
+  align-items: center;
 }

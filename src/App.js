@@ -5,18 +5,18 @@ import Footer from "./components/Footer";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import AboutUs from "./components/pages/AboutUs";
-import Services from "./components/pages/Services";
+import FetchData from "./components/FetchData";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Navbar />
-        <Services />
+        <FetchData />
         {/* <AboutUs /> */}
 
         <Routes>
-          <Route path="/Services" exact component={Services} />
+          <Route path="/FetchData" exact component={FetchData} />
           {/* <Route path="/AboutUs" exact component={AboutUs} /> */}
         </Routes>
         <Footer />

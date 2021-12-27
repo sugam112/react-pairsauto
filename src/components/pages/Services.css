@@ -1,7 +1,10 @@
+.content-container {
+  margin: 20px;
+}
 .content-wrapper {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  max-width: 1120px;
-  width: 90%;
+  grid-gap: 50px;
+  margin: 5% 10% 10%;
   align-items: center;
 }

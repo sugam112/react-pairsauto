@@ -6,21 +6,52 @@ import "./Services.css";
 
 function Services() {
   return (
-    <div className="content-wrapper">
-      <CardItem
-        src="images/card-1.png"
-        text="Oil Change"
-        description="CONVENTIONAL OIL CHANGE. ( *Up to 5 Liter, after that $4 /Liter )"
-        label="Services"
-        path="/services/oil-change"
-      />
-      <CardItem
-        src="images/card-1.png"
-        text="Oil Change"
-        description="CONVENTIONAL OIL CHANGE. ( *Up to 5 Liter, after that $4 /Liter )"
-        label="Services"
-        path="/services/oil-change"
-      />
+    <div className="content-container">
+      <h2>Services At PairsAUTO</h2>
+      <div className="content-wrapper">
+        <CardItem
+          src="images/card-1.png"
+          text="Oil Change"
+          description="CONVENTIONAL OIL CHANGE. ( *Up to 5 Liter, after that $4 /Liter )"
+          label="Services"
+          path="/services/oil-change"
+        />
+        <CardItem
+          src="images/card-1.png"
+          text="Oil Change"
+          description="CONVENTIONAL OIL CHANGE. ( *Up to 5 Liter, after that $4 /Liter )"
+          label="Services"
+          path="/services/oil-change"
+        />
+        <CardItem
+          src="images/card-1.png"
+          text="Oil Change"
+          description="CONVENTIONAL OIL CHANGE. ( *Up to 5 Liter, after that $4 /Liter )"
+          label="Services"
+          path="/services/oil-change"
+        />
+        <CardItem
+          src="images/card-1.png"
+          text="Oil Change"
+          description="CONVENTIONAL OIL CHANGE. ( *Up to 5 Liter, after that $4 /Liter )"
+          label="Services"
+          path="/services/oil-change"
+        />
+        <CardItem
+          src="images/card-1.png"
+          text="Oil Change"
+          description="CONVENTIONAL OIL CHANGE. ( *Up to 5 Liter, after that $4 /Liter )"
+          label="Services"
+          path="/services/oil-change"
+        />
+        <CardItem
+          src="images/card-1.png"
+          text="Oil Change"
+          description="CONVENTIONAL OIL CHANGE. ( *Up to 5 Liter, after that $4 /Liter )"
+          label="Services"
+          path="/services/oil-change"
+        />
+      </div>
     </div>
   );
 }

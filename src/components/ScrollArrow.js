@@ -3,7 +3,7 @@ import "./ScrollArrow.css";
 
 function ScrollArrow() {
   return (
-    <div class="arrow">
+    <div className="arrow">
       <span></span>
       <span></span>
       <span></span>

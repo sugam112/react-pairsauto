@@ -3,6 +3,29 @@ import CardItem from "./CardItem";
 import "./Cards.css";
 
 function Card() {
+  const services = {
+    data: [
+      {
+        title: "Oil Change",
+        description:
+          "CONVENTIONAL OIL CHANGE. ( *Up to 5 Liter, after that $4 /Liter )",
+        src: "images/card-1.png",
+      },
+      {
+        title: "Oil Change",
+        description: "AC RECHARGE r134a refrigerant - $2/Oz",
+        src: "images/card-1.png",
+      },
+      {
+        title: "Tire Change",
+        description: "4 TIRE CHANGE (ANY SIZE - ON RIMS) and more",
+        src: "images/card-1.png",
+      },
+    ],
+  };
+  const res = { ...services.data };
+  const titles = res.title;
+  console.log(titles);
   return (
     <div className="cards">
       <h2>Our Featured Services</h2>
@@ -14,21 +37,21 @@ function Card() {
               text="Oil Change"
               description="CONVENTIONAL OIL CHANGE. ( *Up to 5 Liter, after that $4 /Liter )"
               label="Services"
-              path="/services/oil-change"
+              path="/services"
             />
             <CardItem
               src="images/card-1.png"
               text="AC Recharge"
-              description="ac recharge description"
+              description="AC RECHARGE r134a refrigerant - $2/Oz"
               label="Services"
-              path="/services/ac-recharge"
+              path="/services"
             />
             <CardItem
               src="images/card-1.png"
               text="Tire Change"
-              description="tire change description"
-              label="Services"
-              path="/services/tire-change"
+              description="4 TIRE CHANGE (ANY SIZE - ON RIMS)"
+              label="$39"
+              path="/services"
             />
           </ul>
         </div>

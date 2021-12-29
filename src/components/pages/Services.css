@@ -3,8 +3,18 @@
 }
 .content-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-gap: 50px;
+  grid-template-columns: repeat(1, auto);
   margin: 5% 10% 10%;
   align-items: center;
+}
+.section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr 1fr);
+  /* grid-template-columns: 1fr 2fr; */
+  grid-gap: 10px;
+  padding: 5% 10% 10%;
+  border-bottom: 2px solid #000;
+}
+.details {
+  margin: auto;
 }

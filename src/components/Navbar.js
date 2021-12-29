@@ -28,7 +28,7 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <Link to="/Home" className="navbar-logo" onClick={closeMobileMenu}>
             <img
               src="/images/PairsAuto Logo Desktop.png"
               alt="PairsAuto Logo"

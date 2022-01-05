@@ -18,7 +18,7 @@ function HeroSection() {
       <div className="hero-btns">
         <Button
           className="btns"
-          buttonstyle="btn--outline"
+          buttonstyle="btn--outline-reversed"
           buttonSize="btn--large"
         >
           Get Appointment&nbsp;<i className="far fa-address-book"></i>

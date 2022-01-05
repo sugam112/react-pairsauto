@@ -26,15 +26,15 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar-main">
         <div className="navbar-container">
-          <Link to="/Home" className="navbar-logo" onClick={closeMobileMenu}>
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img
               src="/images/PairsAuto Logo Desktop.png"
               alt="PairsAuto Logo"
             />
           </Link>
-          {/* check timing 20:00 to handle the hamburger icon toggle */}
+
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
           </div>
@@ -45,7 +45,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-items">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link
+                to="/services"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 Services
               </Link>
             </li>
@@ -56,7 +60,7 @@ const Navbar = () => {
             </li>
             <li className="nav-items">
               <Link
-                to="/AboutUs"
+                to="/about-us"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >

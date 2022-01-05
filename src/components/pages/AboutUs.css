@@ -20,9 +20,9 @@
   padding-bottom: 4rem;
 }
 
-.content-wrapper > p {
+.content-wrapper .paragraph {
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-align: justify;
   padding-bottom: 20px;
 }

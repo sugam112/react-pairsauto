@@ -2,25 +2,33 @@ import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import AboutUs from "./components/pages/AboutUs";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import AboutUs from "./components/pages/AboutUs";
+
 import Home from "./components/pages/Home";
+import Services from "./components/pages/Services";
+import GoToTop from "./components/GoToTop";
+// import { Switch } from "react-router-dom/cjs/react-router-dom.min";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <Router>
         <Navbar />
-        <Home />
-        {/* <AboutUs /> */}
 
-        <Routes>
-          <Route path="/Home" exact component={Home} />
-          {/* <Route path="/AboutUs" exact component={AboutUs} /> */}
-        </Routes>
+        {/* <NotFoundPage /> */}
+        {/* <AboutUs /> */}
+        <GoToTop>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/services" component={Services} />
+            <Route path="/about-us" component={AboutUs} />
+          </Switch>
+        </GoToTop>
         <Footer />
-      </BrowserRouter>
+      </Router>
     </>
   );
 }

@@ -7,7 +7,7 @@ function AboutUs() {
       <section className="content-container">
         <div className="content-wrapper">
           <h1>About PairsAuto</h1>
-          <p>
+          <p className="paragraph">
             PAIRS Auto is a local, fully featured auto shop in NE Calgary with
             years of experience and comprehensive ability. We founded PAIRS Auto
             to offer our customers the best auto repair experience in Calgary.
@@ -17,14 +17,14 @@ function AboutUs() {
             ethics. With a team of reliable mechanics, we are aiming to provide
             the best auto services at an affordable price to our customers.
           </p>
-          <p>
+          <p className="paragraph">
             Our services vary from Oil Change, Tire Change, AC Recharge, Wheel
             Alignment, Car Detailing, Windshield Replacement, Mechanical
             Repairs, Diagnosis, Car Services, Remote Starter and Smart key
             configuration. We will provide you great auto repair with best price
             guarantee in Alberta.
           </p>
-          <p>
+          <p className="paragraph">
             Taking time to understand any potential problems with your vehicle
             is the most important part of out job. The diagnostics are an
             essential part of out auto repair service in Calgary. Our team uses
@@ -34,7 +34,7 @@ function AboutUs() {
             auto repair, we will fix your car and get you back out on the road
             without any need to return.
           </p>
-          <p>
+          <p className="paragraph">
             Any car can break down at any time of day and we understand that,
             which is why we offer a flexible auto repair service nearby. Only
             with a quick search of a car repair near me, you can get in touch

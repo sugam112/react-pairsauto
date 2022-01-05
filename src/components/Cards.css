@@ -1,5 +1,5 @@
 .cards {
-  padding: 4rem;
+  padding: 2rem;
   background: #fff;
   /* height: 89.5vh; */
 }
@@ -27,6 +27,7 @@ h2 {
 
 .cards__items {
   margin-bottom: 24px;
+  padding: 0;
 }
 
 .cards__item {
@@ -126,10 +127,13 @@ h2 {
   .cards__item {
     margin-bottom: 2rem;
   }
-}
-
-@media only screen and (max-width: 1024px) {
   .cards__container {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 375) {
+  .cards {
+    padding: 2rem;
   }
 }

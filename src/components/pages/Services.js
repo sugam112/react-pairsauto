@@ -10,7 +10,11 @@ function Services() {
     // Oil Change 0
     {
       title: "Oil Change",
-      imgURL: "images/card-1.png",
+      imgURL: [
+        "images/card-1.png",
+        "images/oilchange2.png",
+        "images/oilchange3.png",
+      ],
 
       types: [
         {
@@ -141,12 +145,242 @@ function Services() {
       <div className="service-wrapper">
         {/* {services.map((service, index) => ( */}
         <div className="section">
-          <Carousel fade>
-            <Carousel.Item></Carousel.Item>
+          <Carousel>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 img-card"
+                src="images/card-1.png"
+                alt="oil change 1"
+              ></img>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 img-card"
+                src="images/oilchange2.png"
+                alt="oil change 2"
+              ></img>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 img-card"
+                src="images/oilchange3.png"
+                alt="oil change 3"
+              ></img>
+            </Carousel.Item>
           </Carousel>
           <div className="details">
-            <h3>CONVENTIONAL OIL CHANGE. </h3>
-            <p>( *Up to 5 Liter, after that $4 /Liter )</p>
+            <h2>Oil Change</h2>
+            <ul>
+              <li className="bullet">
+                <b>$39</b> - CONVENTIONAL OIL CHANGE. ( *Up to 5 Liter, after
+                that $4 /Liter )
+              </li>
+              <li className="bullet">
+                <b>$69</b> - FULL SYNTHETIC OIL CHANGE. ( *Up to 5 Liter, after
+                that $8 /Liter )
+              </li>
+              <li className="bullet">
+                <b>$79</b> - GERMAN CARS - FULL SYNTHETIC OIL CHANGE + PREMIUM
+                OIL FILTER. ( *Oil up to 5 Liter, after that $4 /Liter )
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="section">
+          <Carousel>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 img-card"
+                src="images/acrecharge1.png"
+                alt="AC Recharge 1"
+              ></img>
+            </Carousel.Item>
+          </Carousel>
+          <div className="details">
+            <h2>AC Recharge</h2>
+            <ul>
+              <li className="bullet">
+                <b>$79</b> - AC RECHARGE r134a refrigerant - $2/Oz
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="section">
+          <Carousel>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 img-card"
+                src="images/tirechange1.png"
+                alt="Tire Change 1"
+              ></img>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 img-card"
+                src="images/tirechange1.png"
+                alt="Tire Change 2"
+              ></img>
+            </Carousel.Item>
+          </Carousel>
+          <div className="details">
+            <h2>Tire Change</h2>
+            <ul>
+              <li className="bullet">
+                <b>$39</b> - 4 TIRE CHANGE (ANY SIZE - ON RIMS)
+              </li>
+              <li className="bullet">
+                <b>$39</b> - 4 TIRE CHANGE (14inch TO 16inch - OFF RIMS)
+              </li>
+              <li className="bullet">
+                <b>$49</b> - 4 TIRE CHANGE (17inch TO 18inch - OFF RIMS)
+              </li>
+              <li className="bullet">
+                <b>$59</b> - 4 TIRE CHANGE (19inch TO 20inch - OFF RIMS)
+              </li>
+              <li className="bullet">
+                <b>$20</b> - FLAT TIRE REPAIR
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="section">
+          <Carousel>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 img-card"
+                src="images/mechrepair1.png"
+                alt="Mechanical Repairs 1"
+              ></img>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 img-card"
+                src="images/mechrepair2.png"
+                alt="Mechanical Repairs 2"
+              ></img>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 img-card"
+                src="images/mechrepair3.png"
+                alt="Mechanical Repairs 3"
+              ></img>
+            </Carousel.Item>
+          </Carousel>
+          <div className="details">
+            <h2>Mechanical Repairs</h2>
+            <ul>
+              <li className="bullet">
+                Best facilities for all car repair needs.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="section">
+          <Carousel>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 img-card"
+                src="images/windshield1.png"
+                alt="Windshield Replacement"
+              ></img>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 img-card"
+                src="images/windshield2.png"
+                alt="Windshield Replacement"
+              ></img>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 img-card"
+                src="images/windshield3.png"
+                alt="Windshield Replacement"
+              ></img>
+            </Carousel.Item>
+          </Carousel>
+          <div className="details">
+            <h2>Windshield Replacement</h2>
+            <ul>
+              <li className="bullet">Windshield Replacement</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="section">
+          <Carousel>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 img-card"
+                src="images/cardet1.png"
+                alt="Car Detailing 1"
+              ></img>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 img-card"
+                src="images/cardet2.png"
+                alt="Car Detailing 2"
+              ></img>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 img-card"
+                src="images/cardet3.png"
+                alt="Car Detailing 3"
+              ></img>
+            </Carousel.Item>
+          </Carousel>
+          <div className="details">
+            <h2>Car Detailing</h2>
+            <ul>
+              <li className="bullet">$80 - BRONZE PACKAGE</li>
+              <li className="bullet">$150 - SILVER PACKAGE</li>
+              <li className="bullet">$200 - GOLD PACKAGE</li>
+              <li className="bullet">$380 - PLATINUM PACKAGE</li>
+              <li className="bullet">$60 - INTERIOR CLEAN</li>
+              <li className="bullet">$30 - EXTERIOR CLEAN</li>
+              <li className="bullet">OPTIONAL ADD ONs</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="section">
+          <Carousel>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 img-card"
+                src="images/wheel1.png"
+                alt="Wheel Alignment 1"
+              ></img>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 img-card"
+                src="images/wheel2.png"
+                alt="Wheel Alignment 2"
+              ></img>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 img-card"
+                src="images/wheel3.png"
+                alt="Wheel Alignment 3"
+              ></img>
+            </Carousel.Item>
+          </Carousel>
+          <div className="details">
+            <h2>Wheel Alignment</h2>
+            <ul>
+              <li className="bullet">
+                <b>$139</b> - WHEEL ALIGNMENT
+              </li>
+            </ul>
           </div>
         </div>
       </div>

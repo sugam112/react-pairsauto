@@ -4,8 +4,8 @@ import "./AboutUs.css";
 function AboutUs() {
   return (
     <>
-      <section className="content-container">
-        <div className="content-wrapper">
+      <section className="aboutus-content-container">
+        <div className="aboutus-content-wrapper">
           <h1>About PairsAuto</h1>
           <p className="paragraph">
             PAIRS Auto is a local, fully featured auto shop in NE Calgary with

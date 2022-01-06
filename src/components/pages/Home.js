@@ -8,9 +8,9 @@ function Home() {
   return (
     <>
       <HeroSection />
-      <div className="content">
-        <div className="content-container">
-          <div className="content-wrapper">
+      <div className="home-content">
+        <div className="home-content-container">
+          <div className="home-content-wrapper">
             <h2>
               we have 10+ years of
               <br /> service experience for you

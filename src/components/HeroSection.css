@@ -8,6 +8,7 @@ video {
 
 .hero-container {
   background: url("hero-2.jpg") center center/cover no-repeat;
+  background-blend-mode: darken;
   /* background-image: url(hero-2.jpg); */
   /* background: chocolate; */
   height: 100vh;
@@ -22,7 +23,7 @@ video {
 }
 
 .hero-container > h1 {
-  color: orangered;
+  color: #ffcc00;
   text-transform: capitalize;
   font-size: 80px;
   margin-top: -100px;

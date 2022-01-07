@@ -37,3 +37,23 @@ ul li {
   content: "✅";
   margin-right: 0.5rem;
 }
+
+@media screen and (max-width: 960px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 564px) {
+  .section {
+    width: 100%;
+    padding: 0;
+  }
+  .service-container {
+    margin: 0;
+  }
+  .service-wrapper {
+    margin: 0;
+  }
+}

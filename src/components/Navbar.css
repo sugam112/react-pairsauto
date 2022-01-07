@@ -1,6 +1,6 @@
 .navbar-main {
-  /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
-  backdrop-filter: blur(10px);
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  /* backdrop-filter: blur(10px); */
   height: 80px;
   display: flex;
   justify-content: center;
@@ -57,13 +57,14 @@
 
 .nav-items > p {
   margin-bottom: 0;
+  color: #fff;
 }
 .nav-item {
   height: 40px;
 }
 
 .nav-links {
-  color: #000;
+  color: #fff;
   font-weight: bold;
   border: none;
   text-transform: uppercase;
@@ -80,7 +81,7 @@
 }
 
 .fa-bars {
-  color: #000;
+  color: #fff;
 }
 
 .nav-links-mobile {
@@ -154,7 +155,7 @@
   }
 
   .fa-times {
-    color: #000;
+    color: #fff;
     font-size: 2rem;
   }
 

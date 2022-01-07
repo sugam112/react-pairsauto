@@ -148,21 +148,21 @@ function Services() {
           <Carousel>
             <Carousel.Item>
               <img
-                className="d-block w-100 img-card"
+                className="d-block w-100 img-card img-fluid"
                 src="images/card-1.png"
                 alt="oil change 1"
               ></img>
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100 img-card"
+                className="d-block w-100 img-card img-fluid"
                 src="images/oilchange2.png"
                 alt="oil change 2"
               ></img>
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100 img-card"
+                className="d-block w-100 img-card img-fluid"
                 src="images/oilchange3.png"
                 alt="oil change 3"
               ></img>
@@ -191,7 +191,7 @@ function Services() {
           <Carousel>
             <Carousel.Item>
               <img
-                className="d-block w-100 img-card"
+                className="d-block w-100 img-card img-fluid"
                 src="images/acrecharge1.png"
                 alt="AC Recharge 1"
               ></img>
@@ -211,14 +211,14 @@ function Services() {
           <Carousel>
             <Carousel.Item>
               <img
-                className="d-block w-100 img-card"
+                className="d-block w-100 img-card img-fluid"
                 src="images/tirechange1.png"
                 alt="Tire Change 1"
               ></img>
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100 img-card"
+                className="d-block w-100 img-card img-fluid"
                 src="images/tirechange1.png"
                 alt="Tire Change 2"
               ></img>
@@ -250,21 +250,21 @@ function Services() {
           <Carousel>
             <Carousel.Item>
               <img
-                className="d-block w-100 img-card"
+                className="d-block w-100 img-card img-fluid"
                 src="images/mechrepair1.png"
                 alt="Mechanical Repairs 1"
               ></img>
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100 img-card"
+                className="d-block w-100 img-card img-fluid"
                 src="images/mechrepair2.png"
                 alt="Mechanical Repairs 2"
               ></img>
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100 img-card"
+                className="d-block w-100 img-card img-fluid"
                 src="images/mechrepair3.png"
                 alt="Mechanical Repairs 3"
               ></img>
@@ -284,21 +284,21 @@ function Services() {
           <Carousel>
             <Carousel.Item>
               <img
-                className="d-block w-100 img-card"
+                className="d-block w-100 img-card img-fluid"
                 src="images/windshield1.png"
                 alt="Windshield Replacement"
               ></img>
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100 img-card"
+                className="d-block w-100 img-card img-fluid"
                 src="images/windshield2.png"
                 alt="Windshield Replacement"
               ></img>
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100 img-card"
+                className="d-block w-100 img-card img-fluid"
                 src="images/windshield3.png"
                 alt="Windshield Replacement"
               ></img>
@@ -316,21 +316,21 @@ function Services() {
           <Carousel>
             <Carousel.Item>
               <img
-                className="d-block w-100 img-card"
+                className="d-block w-100 img-card img-fluid"
                 src="images/cardet1.png"
                 alt="Car Detailing 1"
               ></img>
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100 img-card"
+                className="d-block w-100 img-card img-fluid"
                 src="images/cardet2.png"
                 alt="Car Detailing 2"
               ></img>
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100 img-card"
+                className="d-block w-100 img-card img-fluid"
                 src="images/cardet3.png"
                 alt="Car Detailing 3"
               ></img>
@@ -354,21 +354,21 @@ function Services() {
           <Carousel>
             <Carousel.Item>
               <img
-                className="d-block w-100 img-card"
+                className="d-block w-100 img-card img-fluid"
                 src="images/wheel1.png"
                 alt="Wheel Alignment 1"
               ></img>
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100 img-card"
+                className="d-block w-100 img-card img-fluid"
                 src="images/wheel2.png"
                 alt="Wheel Alignment 2"
               ></img>
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100 img-card"
+                className="d-block w-100 img-card img-fluid"
                 src="images/wheel3.png"
                 alt="Wheel Alignment 3"
               ></img>

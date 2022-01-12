@@ -56,7 +56,7 @@
 }
 
 .highlight-items::before {
-  content: "✅ ";
+  content: "\27F6";
   margin-right: 00.5rem;
 }
 

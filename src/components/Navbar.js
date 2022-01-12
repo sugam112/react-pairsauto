@@ -9,21 +9,6 @@ const Navbar = () => {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  //   const showButton = () => {
-  //     if (window.innerWidth <= 960) {
-  //       setButton(false);
-  //     } else {
-  //       setButton(true);
-  //     }
-  //   };
-
-  //   to not render the button when you refresh useEffect is used
-  //   useEffect(() => {
-  //     showButton();
-  //   }, []);
-
-  //   window.addEventListener("resize", showButton);
-
   return (
     <>
       <nav className="navbar-main">
@@ -54,7 +39,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-items">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link
+                to="/inventory"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 Inventory&nbsp;<i className="fas fa-warehouse"></i>
               </Link>
             </li>

@@ -4,9 +4,11 @@ import "./ScrollArrow.css";
 function ScrollArrow() {
   return (
     <div className="arrow">
-      <span></span>
-      <span></span>
-      <span></span>
+      <a href="#home-content">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
     </div>
   );
 }

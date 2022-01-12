@@ -1,8 +1,6 @@
 import React from "react";
-// import Card from "../Card";
-// import CardItem from "../CardItem";
+
 import Carousel from "react-bootstrap/Carousel";
-// import "../Cards.css";
 import "./Services.css";
 
 function Services() {

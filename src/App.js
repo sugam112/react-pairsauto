@@ -10,7 +10,8 @@ import AboutUs from "./components/pages/AboutUs";
 import Home from "./components/pages/Home";
 import Services from "./components/pages/Services";
 import GoToTop from "./components/GoToTop";
-// import { Switch } from "react-router-dom/cjs/react-router-dom.min";
+// import Inventory from "./components/pages/Inventory";
+import ContactUs from "./components/pages/ContactUs";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/" exact component={Home} />
             <Route path="/services" component={Services} />
             <Route path="/about-us" component={AboutUs} />
+            <Route path="/contact-us" component={ContactUs} />
           </Switch>
         </GoToTop>
         <Footer />

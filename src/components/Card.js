@@ -40,17 +40,17 @@ function Card() {
               path="/services"
             />
             <CardItem
-              src="images/card-1.png"
+              src="images/acrecharge1.png"
               text="AC Recharge"
               description="AC RECHARGE r134a refrigerant - $2/Oz"
               label="Services"
               path="/services"
             />
             <CardItem
-              src="images/card-1.png"
+              src="images/tirechange1.png"
               text="Tire Change"
               description="4 TIRE CHANGE (ANY SIZE - ON RIMS)"
-              label="$39"
+              label="Services"
               path="/services"
             />
           </ul>

@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
       <HeroSection />
-      <div className="home-content">
+      <div className="home-content" id="home-content">
         <div className="home-content-container">
           <div className="home-content-wrapper">
             <h2>

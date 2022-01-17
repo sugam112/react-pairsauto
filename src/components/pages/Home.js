@@ -15,7 +15,7 @@ function Home() {
           <br />
           Repairs Hassle Free
         </h1>
-        <p>What are you waiting for?</p>
+        <h2>What are you waiting for?</h2>
         <div className="hero-btns">
           <Button
             className="btns"

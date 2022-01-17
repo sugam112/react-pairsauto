@@ -71,7 +71,9 @@ function Footer() {
           <div className="social-icons">
             <Link
               className="social-icon-link facebook"
-              to="https://www.facebook.com/PairsAuto"
+              to={{
+                pathname: "https://www.facebook.com/PairsAuto",
+              }}
               target="_blank"
               aria-label="Facebook"
             >
@@ -79,7 +81,9 @@ function Footer() {
             </Link>
             <Link
               className="social-icon-link instagram"
-              to="https://www.instagram.com/pairsauto/"
+              to={{
+                pathname: "https://www.instagram.com/pairsauto/",
+              }}
               target="_blank"
               aria-label="Instagram"
             >
@@ -87,7 +91,10 @@ function Footer() {
             </Link>
             <Link
               className="social-icon-link youtube"
-              to="https://www.youtube.com/channel/UCmhuM4ESgFY_5PXb8vFTbsw/featured"
+              to={{
+                pathname:
+                  "https://www.youtube.com/channel/UCmhuM4ESgFY_5PXb8vFTbsw/featured",
+              }}
               target="_blank"
               aria-label="Youtube"
             >

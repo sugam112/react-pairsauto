@@ -51,9 +51,13 @@ ul li {
     padding: 0;
   }
   .service-container {
-    margin: 0;
+    margin: 5px;
   }
   .service-wrapper {
     margin: 0;
+  }
+  .img-card {
+    width: auto;
+    height: auto;
   }
 }

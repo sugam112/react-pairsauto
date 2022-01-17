@@ -314,15 +314,15 @@ html {
   scroll-behavior: smooth;
 }
 html::-webkit-scrollbar {
-  width: 20px;
+  width: 10px;
 }
 
 html::-webkit-scrollbar-track {
-  background-color: transparent;
+  background-color: #000;
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #4e4e4e;
+  background: #ffc107;
   border-radius: 5px;
 }
 

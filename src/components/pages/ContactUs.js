@@ -4,9 +4,10 @@ import "./ContactUs.css";
 
 function ContactUs() {
   return (
-    <div>
+    <div className="container">
       <h1>Contact Us</h1>
       <Formik
+        className="form-control"
         initialValues={{
           firstName: "",
           lastName: "",
@@ -18,24 +19,34 @@ function ContactUs() {
         }}
       >
         <Form>
-          <label htmlFor="firstName">First Name</label>
-          <Field id="firstName" name="firstName" placeholder="" />
-          <label htmlFor="lastName">Last Name</label>
-          <Field id="lastName" name="lastName" placeholder="" />
-          <label htmlFor="lastName">Mobile Number</label>
+          <label htmlFor="firstName" className="label-title">
+            First Name
+          </label>
+          <Field id="firstName" name="firstName" placeholder="" required />
+          <label htmlFor="lastName" className="label-title">
+            Last Name
+          </label>
+          <Field id="lastName" name="lastName" placeholder="" required />
+          <label htmlFor="lastName" className="label-title">
+            Mobile Number
+          </label>
           <Field
             id="mobilenumber"
             name="mobilenumber"
             placeholder=""
             type="tel"
           />
-          <label htmlFor="email">Email</label>
-          <Field id="email" name="email" placeholder="" type="email" />
+          <label htmlFor="email" className="label-title">
+            Email
+          </label>
+          <Field id="email" name="email" placeholder="" type="email" required />
+          <label className="label-title">Service Requested</label>
           <label>
             <Field
               type="checkbox"
               name="Service Requested"
               value="Oil Change"
+              className="checkbox"
             />
             Oil Change
           </label>
@@ -44,6 +55,7 @@ function ContactUs() {
               type="checkbox"
               name="Service Requested"
               value="Tire Change"
+              className="checkbox"
             />
             Tire Change
           </label>
@@ -51,6 +63,7 @@ function ContactUs() {
             <Field
               type="checkbox"
               name="Service Requested"
+              className="checkbox"
               value="AC Recharge"
             />
             AC Recharge
@@ -60,6 +73,7 @@ function ContactUs() {
               type="checkbox"
               name="Service Requested"
               value="Wheel Alignment"
+              className="checkbox"
             />
             Wheel Alignment
           </label>
@@ -68,6 +82,7 @@ function ContactUs() {
               type="checkbox"
               name="Service Requested"
               value="Car Detailing"
+              className="checkbox"
             />
             Car Detailing
           </label>
@@ -76,6 +91,7 @@ function ContactUs() {
               type="checkbox"
               name="Service Requested"
               value="Windshield Replacement"
+              className="checkbox"
             />
             Windshield Replacement
           </label>
@@ -84,6 +100,7 @@ function ContactUs() {
               type="checkbox"
               name="Service Requested"
               value="Mechanical Repairs"
+              className="checkbox"
             />
             Mechanical Repairs
           </label>
@@ -92,6 +109,7 @@ function ContactUs() {
               type="checkbox"
               name="Service Requested"
               value="Car Service"
+              className="checkbox"
             />
             Car Service
           </label>

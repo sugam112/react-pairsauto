@@ -7,7 +7,7 @@ video {
 }
 
 .hero-container {
-  background: url("hero-2.jpg") center center/cover no-repeat;
+  /* background: url("../images/hero-2.jpg") center center/cover no-repeat; */
   background-blend-mode: darken;
   /* background-image: url(hero-2.jpg); */
   /* background: chocolate; */

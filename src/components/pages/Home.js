@@ -2,12 +2,31 @@ import React from "react";
 import "../../App.css";
 import "./Home.css";
 import Card from "../Card";
-import HeroSection from "../HeroSection";
+import { Button } from "../Button";
+import ScrollArrow from "../ScrollArrow";
+// import HeroSection from "../HeroSection";
 
 function Home() {
   return (
     <>
-      <HeroSection />
+      <div className="hero-container">
+        <h1>
+          We Make Car&nbsp;
+          <br />
+          Repairs Hassle Free
+        </h1>
+        <p>What are you waiting for?</p>
+        <div className="hero-btns">
+          <Button
+            className="btns"
+            buttonstyle="btn--outline-reversed"
+            buttonSize="btn--large"
+          >
+            Get Appointment&nbsp;<i className="far fa-address-book"></i>
+          </Button>
+        </div>
+        <ScrollArrow />
+      </div>
       <div className="home-content" id="home-content">
         <div className="home-content-container">
           <div className="home-content-wrapper">

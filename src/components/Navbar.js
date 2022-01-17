@@ -67,7 +67,7 @@ const Navbar = () => {
             </li>
             <li className="nav-items">
               <p>
-                <i className="fas fa-phone"></i> : +1 (403) 800-1806
+                <i class="fas fa-phone-alt"></i> : +1 (403) 800-1806
               </p>
             </li>
           </ul>

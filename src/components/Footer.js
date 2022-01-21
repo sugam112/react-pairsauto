@@ -32,7 +32,7 @@ function Footer() {
             <h2>
               Address&nbsp;<i className="fas fa-map-marked-alt"></i>
             </h2>
-            <Link to="/sign-up">3370 32 Street NE, Calgary, AB, T1Y 6B9</Link>
+            <Link to="/">3370 32 Street NE, Calgary, AB, T1Y 6B9</Link>
           </div>
           <div className="footer-link-items">
             <h2>
@@ -45,7 +45,7 @@ function Footer() {
             <h2>
               Timing&nbsp;<i className="far fa-clock"></i>
             </h2>
-            <Link to="/">Mon-Sat: 9:30 am – 6:30 pm</Link>
+            <Link to="/">Mon-Sat: 9:30 am – 6:30 pm, Sun: 12 pm - 5 pm</Link>
           </div>
         </div>
       </div>

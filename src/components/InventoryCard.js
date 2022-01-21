@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import "./InventoryCard.css";
+import { Card, Placeholder } from "react-bootstrap";
 import Loader from "./Loader";
 
 const InventoryCard = () => {
@@ -57,6 +57,7 @@ const InventoryCard = () => {
   if (products) {
     console.log(products.data);
   }
+
   return (
     <div className="card-container col-sm-6 col-md-4 col-xl-3 col-12">
       {/* <div className="card-image">
@@ -73,6 +74,20 @@ const InventoryCard = () => {
         </div>
       </div> */}
       {content}
+
+      <Card style={{ width: "18rem" }}>
+        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Body>
+          <Placeholder as={Card.Title} animation="glow">
+            <Placeholder xs={6} />
+          </Placeholder>
+          <Placeholder as={Card.Text} animation="glow">
+            <Placeholder xs={7} /> <Placeholder xs={4} /> <Placeholder xs={4} />{" "}
+            <Placeholder xs={6} /> <Placeholder xs={8} />
+          </Placeholder>
+          <Placeholder.Button variant="primary" xs={6} />
+        </Card.Body>
+      </Card>
     </div>
   );
 };

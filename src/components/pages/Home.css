@@ -29,6 +29,10 @@
   align-items: flex-start;
 }
 
+.sub-header {
+  color: #fff;
+}
+
 .home-content-wrapper > h2 {
   font-size: 3.5rem;
   text-align: left;
@@ -92,8 +96,7 @@ video {
 
 .hero-container {
   background: url("/src/hero-2.jpg") center center/cover no-repeat;
-  background-blend-mode: darken;
-  /* background: chocolate; */
+  background-blend-mode: lighten;
   height: 100vh;
   width: 100%;
   display: flex;

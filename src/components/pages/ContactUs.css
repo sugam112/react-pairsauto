@@ -1,4 +1,33 @@
+.row {
+  margin: 0.75rem;
+  vertical-align: middle;
+}
+.contact-wrapper {
+  margin: 3% 1%;
+  align-items: center;
+}
+.title {
+  text-align: center;
+  font-size: calc(1.75rem + 1.5vw);
+}
 .label-title {
   font-weight: bold;
   font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+.input-text {
+  color: #333;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  padding: 1rem;
+  margin: auto;
+}
+
+.input-checkbox {
+  color: #333;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  margin: 5px;
 }

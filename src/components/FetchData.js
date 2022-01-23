@@ -1,32 +1,50 @@
 import React from "react";
 
 function Fetchdata() {
-  const axios = require("axios");
+  var axios = require("axios");
 
-  // Make a request for a user with a given ID
-  axios
-    .get(
-      "https://clients.automanager.com/3384c1d0d56a40e6a9aaf738622b81cf/inventory.xml?ID=57885f7924&Features=1&Photos=1",
-      {
-        headers: {
-          Authorization: `no-cors`,
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Credentials": true,
-        },
-      }
-    )
+  var config = {
+    method: "get",
+    url: "https://clients.automanager.com/3384c1d0d56a40e6a9aaf738622b81cf/inventory.xml?ID=57885f7924&Features=1&Photos=1",
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
+  };
 
+  axios(config)
     .then(function (response) {
-      // handle success
-      console.log(response);
+      console.log(JSON.stringify(response.data));
     })
     .catch(function (error) {
-      // handle error
       console.log(error);
-    })
-    .then(function () {
-      console.log("always executed");
     });
+
+  // const axios = require("axios");
+
+  // // Make a request for a user with a given ID
+  // axios
+  //   .get(
+  //     "https://clients.automanager.com/3384c1d0d56a40e6a9aaf738622b81cf/inventory.xml?ID=57885f7924&Features=1&Photos=1",
+  //     {
+  //       headers: {
+  //         Authorization: `no-cors`,
+  //         "Access-Control-Allow-Origin": "*",
+  //         "Access-Control-Allow-Credentials": true,
+  //       },
+  //     }
+  //   )
+
+  //   .then(function (response) {
+  //     // handle success
+  //     console.log(response);
+  //   })
+  //   .catch(function (error) {
+  //     // handle error
+  //     console.log(error);
+  //   })
+  //   .then(function () {
+  //     console.log("always executed");
+  //   });
 
   return (
     <div>

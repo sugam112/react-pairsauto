@@ -29,7 +29,6 @@ const InventoryCard = () => {
           data: response,
           error: false,
         });
-        console.log(response.Inventory);
       })
       .catch(function (error) {
         // handle error
@@ -42,7 +41,7 @@ const InventoryCard = () => {
         // console.log(error);
       })
       .then(function () {
-        console.log("always executed");
+        //always executed
       });
   }, [axios]);
 
@@ -55,7 +54,7 @@ const InventoryCard = () => {
     content = <Loader></Loader>;
   }
   if (products) {
-    console.log(products.data);
+    console.log(products);
   }
 
   return (

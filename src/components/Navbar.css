@@ -137,9 +137,8 @@
 
   .navbar-logo {
     position: absolute;
-    top: 0;
+
     left: 0;
-    transform: translate(25%, 50%);
   }
   .navbar-logo img {
     height: 50px;
@@ -148,9 +147,9 @@
   .menu-icon {
     display: block;
     position: absolute;
-    top: 0;
+    margin-right: 10px;
     right: 0;
-    transform: translate(-100%, 60%);
+
     font-size: 1.8rem;
     cursor: pointer;
   }

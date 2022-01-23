@@ -3,7 +3,11 @@ h2 {
   font-size: 2rem;
   text-transform: capitalize;
 }
-
+*,
+html,
+body {
+  background: #fff;
+}
 .card-container {
   background: orange;
   margin: 10px;
@@ -11,7 +15,7 @@ h2 {
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 
 /* ===================================================================== */

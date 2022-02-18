@@ -1,24 +1,46 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import XMLParser from "react-xml-parser";
+// import InventoryCard from "./InventoryCard";
 
 function Fetchdata() {
   var axios = require("axios");
 
   var config = {
     method: "get",
-    url: "https://clients.automanager.com/3384c1d0d56a40e6a9aaf738622b81cf/inventory.xml?ID=57885f7924&Features=1&Photos=1",
+    url: "https://cors-anywhere.herokuapp.com/https://clients.automanager.com/3384c1d0d56a40e6a9aaf738622b81cf/inventory.xml?ID=57885f7924&Features=1&Photos=1",
     headers: {
       "Access-Control-Allow-Origin": "*",
     },
   };
 
-  axios(config)
-    .then(function (response) {
-      console.log(JSON.stringify(response.data));
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+  // const [cars, setCars] = useState({
+  //   loading: false,
+  //   data: null,
+  //   error: false,
+  // });
+  const [cars, setCars] = useState([]);
+  useEffect(() => {
+    fetchCars();
+  });
 
+  useEffect(() => {
+    console.log(cars);
+  }, [cars]);
+
+  const fetchCars = async () => {
+    axios(config)
+      .then(function (response) {
+        let Inventory = new XMLParser().parseFromString(response.data);
+        setCars(Inventory.children);
+
+        console.log(cars);
+        return;
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  };
+  fetchCars();
   // const axios = require("axios");
 
   // // Make a request for a user with a given ID
@@ -46,11 +68,7 @@ function Fetchdata() {
   //     console.log("always executed");
   //   });
 
-  return (
-    <div>
-      <h2>Reading API data</h2>
-    </div>
-  );
+  return <div></div>;
 }
 
 export default Fetchdata;

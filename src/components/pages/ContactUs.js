@@ -70,6 +70,7 @@ function ContactUs() {
                   name="mobilenumber"
                   placeholder="+1"
                   className="input-text"
+                  required
                 />
               </Col>
             </Row>

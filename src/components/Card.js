@@ -23,9 +23,8 @@ function Card() {
       },
     ],
   };
-  const res = { ...services.data };
-  const titles = res.title;
-  console.log(titles);
+
+  console.log(services);
   return (
     <div className="cards">
       <h2>Our Featured Services</h2>

@@ -52,6 +52,24 @@ function Home() {
         </div>
       </div>
       <Card />
+      <div className="gallery-container">
+        <div className="box">
+          <img src="https://source.unsplash.com/1000x800" alt="" />
+          <span>CSS</span>
+        </div>
+        <div className="box">
+          <img src="https://source.unsplash.com/1000x802" alt="" />
+          <span>Image</span>
+        </div>
+        <div className="box">
+          <img src="https://source.unsplash.com/1000x804" alt="" />
+          <span>Hover</span>
+        </div>
+        <div className="box">
+          <img src="https://source.unsplash.com/1000x806" alt="" />
+          <span>Effect</span>
+        </div>
+      </div>
     </>
   );
 }

@@ -6,12 +6,6 @@ const Inventory = () => {
   return (
     <div className="inventory-container">
       <InventoryCard />
-      <InventoryCard />
-      <InventoryCard />
-      <InventoryCard />
-      <InventoryCard />
-      <InventoryCard />
-      <InventoryCard />
     </div>
   );
 };

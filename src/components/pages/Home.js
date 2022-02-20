@@ -35,9 +35,10 @@ function Home() {
               <br /> service experience for you
             </h2>
             <p>
-              Sine the year 2010 we are always ready to give you one of the best
-              service. This will make a good image on the best service for us
-              &amp; will help from it.
+              Since the year 2010 we are always ready to give you one of the
+              best services. With a team of reliable mechanics, we are aiming to
+              provide the best auto services at an affordable price to our
+              customers.
             </p>
           </div>
           <div className="highlight-wrapper">
@@ -54,20 +55,20 @@ function Home() {
       <Card />
       <div className="gallery-container">
         <div className="box">
-          <img src="https://source.unsplash.com/1000x800" alt="" />
-          <span>CSS</span>
+          <img src="./images/galleryimg1.png" alt="Gallery 1" />
+          <span>Workstations</span>
         </div>
         <div className="box">
-          <img src="https://source.unsplash.com/1000x802" alt="" />
-          <span>Image</span>
+          <img src="./images/galleryimg2.png" alt="Gallery 2" />
+          <span>Waiting Room</span>
         </div>
         <div className="box">
-          <img src="https://source.unsplash.com/1000x804" alt="" />
-          <span>Hover</span>
+          <img src="./images/galleryimg3.png" alt="Gallery 3" />
+          <span>Warehouse</span>
         </div>
         <div className="box">
-          <img src="https://source.unsplash.com/1000x806" alt="" />
-          <span>Effect</span>
+          <img src="./images/galleryimg4.png" alt="Gallery 4" />
+          <span>Maintenance</span>
         </div>
       </div>
     </>

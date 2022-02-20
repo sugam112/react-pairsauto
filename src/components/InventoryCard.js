@@ -170,45 +170,46 @@ const InventoryCard = () => {
   }
 
   return (
-    <div className="card-container col-sm-6 col-md-4 col-xl-3 col-12">
-      {/* Filters Go Here */}
-      {content ? (
-        dummy.map((dummyData) => {
-          return (
-            <div className="card-wrapper" key={dummyData.id}>
-              <div className="card-image">
-                <img src="./images/card-1.png" alt="pic 1"></img>
-              </div>
-              <div className="card-details">
-                <div className="row ">
-                  <div className="col col-8">{dummyData.car_make}</div>
-                  <div className="col col-4 tr">{dummyData.car_model}</div>
-                  <div className="col col-6">{dummyData.car_year}</div>
-                  <div className="col col-6 tr">{dummyData.emi}/month</div>
-                  <div className="col col-6">{dummyData.price}</div>
-                  <div className="col col-6 tr">{dummyData.kms}kms</div>
+    <>
+      <div className="card-container col-sm-6 col-md-4 col-xl-3 col-12">
+        {content ? (
+          dummy.map((dummyData) => {
+            return (
+              <div className="card-wrapper" key={dummyData.id}>
+                <div className="card-image">
+                  <img src="./images/card-1.png" alt="pic 1"></img>
+                </div>
+                <div className="card-details">
+                  <div className="row ">
+                    <div className="col col-8">{dummyData.car_make}</div>
+                    <div className="col col-4 tr">{dummyData.car_model}</div>
+                    <div className="col col-6">{dummyData.car_year}</div>
+                    <div className="col col-6 tr">{dummyData.emi}/month</div>
+                    <div className="col col-6">{dummyData.price}</div>
+                    <div className="col col-6 tr">{dummyData.kms}kms</div>
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })
-      ) : (
-        <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src="holder.js/100px180" />
-          <Card.Body>
-            <Placeholder as={Card.Title} animation="glow">
-              <Placeholder xs={6} />
-            </Placeholder>
-            <Placeholder as={Card.Text} animation="glow">
-              <Placeholder xs={7} /> <Placeholder xs={4} />{" "}
-              <Placeholder xs={4} /> <Placeholder xs={6} />{" "}
-              <Placeholder xs={8} />
-            </Placeholder>
-            <Placeholder.Button variant="primary" xs={6} />
-          </Card.Body>
-        </Card>
-      )}
-    </div>
+            );
+          })
+        ) : (
+          <Card style={{ width: "18rem" }}>
+            <Card.Img variant="top" src="holder.js/100px180" />
+            <Card.Body>
+              <Placeholder as={Card.Title} animation="glow">
+                <Placeholder xs={6} />
+              </Placeholder>
+              <Placeholder as={Card.Text} animation="glow">
+                <Placeholder xs={7} /> <Placeholder xs={4} />{" "}
+                <Placeholder xs={4} /> <Placeholder xs={6} />{" "}
+                <Placeholder xs={8} />
+              </Placeholder>
+              <Placeholder.Button variant="primary" xs={6} />
+            </Card.Body>
+          </Card>
+        )}
+      </div>
+    </>
   );
 };
 

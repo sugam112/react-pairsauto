@@ -27,7 +27,7 @@ function Card() {
   console.log(services);
   return (
     <div className="cards">
-      <h2>Our Featured Services</h2>
+      <h2 className="section-heading">Our Featured Services</h2>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">

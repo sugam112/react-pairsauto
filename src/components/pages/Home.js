@@ -18,7 +18,7 @@ function Home() {
         <h2 className="sub-header">What are you waiting for?</h2>
         <div className="hero-btns">
           <Button
-            className="btns"
+            className="btns btn-shine"
             buttonstyle="btn--outline-reversed"
             buttonSize="btn--large"
           >
@@ -56,11 +56,11 @@ function Home() {
       <div className="gallery-container">
         <div className="box">
           <img src="./images/galleryimg1.png" alt="Gallery 1" />
-          <span>Workstations</span>
+          <span>Garage</span>
         </div>
         <div className="box">
           <img src="./images/galleryimg2.png" alt="Gallery 2" />
-          <span>Waiting Room</span>
+          <span>Front Office</span>
         </div>
         <div className="box">
           <img src="./images/galleryimg3.png" alt="Gallery 3" />

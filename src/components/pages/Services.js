@@ -217,7 +217,7 @@ function Services() {
             <Carousel.Item>
               <img
                 className="d-block w-100 img-card img-fluid"
-                src="images/tirechange1.png"
+                src="images/tirechange2.png"
                 alt="Tire Change 2"
               ></img>
             </Carousel.Item>
@@ -271,6 +271,12 @@ function Services() {
           <div className="details">
             <h2>Mechanical Repairs</h2>
             <ul>
+              <li className="bullet">Brake change</li>
+              <li className="bullet">Engine bay checks</li>
+              <li className="bullet">
+                Check level and refill brake fluid/clutch fluid
+              </li>
+              <li className="bullet">Grease and lubricate components</li>
               <li className="bullet">
                 Best facilities for all car repair needs.
               </li>
@@ -376,7 +382,7 @@ function Services() {
             <h2>Wheel Alignment</h2>
             <ul>
               <li className="bullet">
-                <b>$139</b> - WHEEL ALIGNMENT
+                <b>$109</b> - WHEEL ALIGNMENT
               </li>
             </ul>
           </div>

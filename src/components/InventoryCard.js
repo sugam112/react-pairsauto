@@ -122,7 +122,6 @@ const InventoryCard = () => {
     const config = {
       headers: {
         "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET",
       },
     };
     setProducts({

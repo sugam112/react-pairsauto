@@ -174,7 +174,7 @@ function Services() {
                 that $4 /Liter )
               </li>
               <li className="bullet">
-                <b>$69</b> - FULL SYNTHETIC OIL CHANGE. ( *Up to 5 Liter, after
+                <b>$65</b> - FULL SYNTHETIC OIL CHANGE. ( *Up to 5 Liter, after
                 that $8 /Liter )
               </li>
               <li className="bullet">

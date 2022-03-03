@@ -119,18 +119,18 @@ const InventoryCard = () => {
   // console.log(products.data);
 
   useEffect(() => {
-    const config = {
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-      },
-    };
+    // const config = {
+    //   headers: {
+    //     "Access-Control-Allow-Origin": "*",
+    //   },
+    // };
     setProducts({
       loading: true,
       data: null,
       error: false,
     });
     axios
-      .get(url, config)
+      .get(url)
 
       .then(function (response) {
         // handle success

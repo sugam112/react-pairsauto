@@ -30,7 +30,6 @@ h2 {
   /* There will be 4 cards per row */
   flex-basis: 25%;
 
-  background-color: orange;
   padding-left: 8px;
   padding-right: 8px;
 }

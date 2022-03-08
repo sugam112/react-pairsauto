@@ -213,7 +213,7 @@ const InventoryCard = () => {
         {content ? (
           dummy.map((dummyData) => {
             return (
-              <div className="cards__item">
+              <div className="cards__item" key={dummyData.id}>
                 <div className="card">
                   <div className="card__cover">
                     <div className="card-image">

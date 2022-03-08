@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Card, Placeholder } from "react-bootstrap";
+import { Card, Placeholder, Button, Row } from "react-bootstrap";
 import Loader from "./Loader";
 import "./InventoryCard.css";
 
@@ -209,34 +209,33 @@ const InventoryCard = () => {
         )}
       </div> */}
 
-      <div className="cards col-sm-6 col-md-4 col-xl-3 col-12">
+      <Row xs={1} md={2} className="g-0 ">
         {content ? (
           dummy.map((dummyData) => {
             return (
-              <div className="cards__item" key={dummyData.id}>
-                <div className="card">
-                  <div className="card__cover">
-                    <div className="card-image">
-                      <img src="./images/card-1.png" alt="pic 1"></img>
-                    </div>
-                  </div>
-
-                  <div className="card__content">
-                    <div className="row ">
-                      <div className="col col-8">{dummyData.car_make}</div>
-                      <div className="col col-4 tr">{dummyData.car_model}</div>
-                      <div className="col col-6">{dummyData.car_year}</div>
-                      <div className="col col-6 tr">{dummyData.emi}/month</div>
-                      <div className="col col-6">{dummyData.price}</div>
-                      <div className="col col-6 tr">{dummyData.kms}kms</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Card
+                variant="top"
+                className="col-md-4 col-xl-3 col-12 m-4"
+                key={dummyData.id}
+              >
+                <Card.Img variant="top" src="./images/card-1.png" />
+                <Card.Body>
+                  <Card.Title>{dummyData.car_make}</Card.Title>
+                  <Card.Text>
+                    {dummyData.car_model} {dummyData.car_year}
+                  </Card.Text>
+                  <Card.Text> {dummyData.emi}/month</Card.Text>
+                  <Card.Text>{dummyData.price}</Card.Text>
+                  <Card.Text> {dummyData.kms} kms</Card.Text>
+                  <Button href="/contact-us" variant="primary">
+                    More details
+                  </Button>
+                </Card.Body>
+              </Card>
             );
           })
         ) : (
-          <Card style={{ width: "18rem" }}>
+          <Card className="col-sm-6 col-md-4 col-xl-3 col-12">
             <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
               <Placeholder as={Card.Title} animation="glow">
@@ -251,7 +250,7 @@ const InventoryCard = () => {
             </Card.Body>
           </Card>
         )}
-      </div>
+      </Row>
     </>
   );
 };

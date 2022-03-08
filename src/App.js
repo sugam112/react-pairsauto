@@ -10,7 +10,7 @@ import AboutUs from "./components/pages/AboutUs";
 import Home from "./components/pages/Home";
 import Services from "./components/pages/Services";
 import GoToTop from "./components/GoToTop";
-import Inventory from "./components/pages/Inventory";
+import InventoryCard from "./components/InventoryCard";
 import ContactUs from "./components/pages/ContactUs";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/services" component={Services} />
-            <Route path="/inventory" component={Inventory} />
+            <Route path="/inventory" component={InventoryCard} />
             <Route path="/about-us" component={AboutUs} />
             <Route path="/contact-us" component={ContactUs} />
           </Switch>

@@ -209,21 +209,21 @@ const InventoryCard = () => {
         )}
       </div> */}
 
-      <Row xs={1} md={2} className="g-0 ">
+      <Row xs={1} md={2} className="g-0">
         {content ? (
           dummy.map((dummyData) => {
             return (
               <Card
                 variant="top"
-                className="col-md-4 col-xl-3 col-12 m-4"
+                className="col-md-4 col-xl-3 col-12 m-4 "
                 key={dummyData.id}
               >
                 <Card.Img variant="top" src="./images/card-1.png" />
                 <Card.Body>
                   <Card.Title>{dummyData.car_make}</Card.Title>
-                  <Card.Text>
+                  <Card.Subtitle className="mb-2 text-muted">
                     {dummyData.car_model} {dummyData.car_year}
-                  </Card.Text>
+                  </Card.Subtitle>
                   <Card.Text> {dummyData.emi}/month</Card.Text>
                   <Card.Text>{dummyData.price}</Card.Text>
                   <Card.Text> {dummyData.kms} kms</Card.Text>

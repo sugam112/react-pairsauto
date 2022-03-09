@@ -3,17 +3,13 @@ h2 {
   font-size: 2rem;
   text-transform: capitalize;
 }
-
-.card-container {
-  background: grey;
-  margin: 10px;
-  max-width: 300px;
-  border-radius: 10px;
-  overflow: hidden;
-  text-decoration: none;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.inventory-container {
+  margin: 0 10%;
 }
 
+.card-decorations {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .cards {
   display: flex;

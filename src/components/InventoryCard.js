@@ -3,7 +3,7 @@ import { Card, Placeholder, Button, Row } from "react-bootstrap";
 import Loader from "./Loader";
 import "./InventoryCard.css";
 
-const InventoryCard = () => {
+const InventoryCard = (props) => {
   const dummy = [
     {
       id: 1,
@@ -106,67 +106,33 @@ const InventoryCard = () => {
       kms: 44607,
     },
   ];
+  const [products, setProducts] = useState();
+
   const axios = require("axios");
   const url =
     "https://clients.automanager.com/3384c1d0d56a40e6a9aaf738622b81cf/inventory.xml?ID=57885f7924&Features=1&Photos=1";
 
-  const [products, setProducts] = useState({
-    loading: false,
-    data: null,
-    error: false,
-  });
+  // const inputEl = useRef("");
 
   // console.log(products.data);
 
   useEffect(() => {
-    // const config = {
-    //   headers: {
-    //     "Access-Control-Allow-Origin": "*",
-    //   },
-    // };
-    setProducts({
-      loading: true,
-      data: null,
-      error: false,
-    });
-    axios
-      .get(url)
+    fetchData(url);
+  });
 
-      .then(function (response) {
-        // handle success
-        setProducts({
-          loading: false,
-          data: response,
-          error: false,
-        });
-        console.log(response);
-      })
-      .catch(function (error) {
-        // handle error
-        setProducts({
-          loading: false,
-          data: null,
-          error: true,
-        });
-
-        // console.log(error);
-      })
-      .then(function () {
-        //always executed
+  const fetchData = async (url) => {
+    try {
+      const response = axios.get(url, {
+        headers: { "Access-Control-Allow-Origin": "*" },
       });
-  }, [axios]);
+      const { results } = response.data;
+      setProducts(results);
+    } catch (e) {
+      console.log("Error");
+    }
+  };
 
   let content = null;
-
-  if (products.error) {
-    content = <p>There was an error, refresh or try again later</p>;
-  }
-  if (products.loading) {
-    content = <Loader></Loader>;
-  }
-  if (products) {
-    console.log(products);
-  }
 
   return (
     <>
@@ -208,10 +174,15 @@ const InventoryCard = () => {
           </Card>
         )}
       </div> */}
+      <div className="filter-container">
+        <input
+          type="text"
+          placeholder="Year / Make / Model"
+          className="p-2"
+          value={props.term}
+        ></input>
+      </div>
       <div className="inventory-container">
-        <Row>
-          <input type="text"></input>
-        </Row>
         <Row xs={1} md={2} className="g-0 d-flex justify-content-around">
           {content ? (
             dummy.map((dummyData) => {

@@ -6,6 +6,9 @@ h2 {
 .inventory-container {
   margin: 0 10%;
 }
+.filter-container {
+  margin: 0 10%;
+}
 
 .card-decorations {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

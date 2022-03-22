@@ -127,7 +127,6 @@ const InventoryCard = (props) => {
         {
           headers: {
             "Access-Control-Allow-Origin": "*",
-            "Access-Control-Request-Headers": "*",
             // credentials: "include",
           },
         },

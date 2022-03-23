@@ -122,16 +122,7 @@ const InventoryCard = (props) => {
 
   const fetchData = async (url) => {
     try {
-      axios(
-        url,
-        {
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-            // credentials: "include",
-          },
-        },
-        { method: "GET" }
-      ).then((response) => {
+      axios.get(url, { method: "GET" }).then((response) => {
         console.log(response);
         console.log(response.data);
         console.log(response.status);

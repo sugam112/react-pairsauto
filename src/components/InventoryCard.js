@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Card, Placeholder, Button, Row } from "react-bootstrap";
 // import Loader from "./Loader";
 import "./InventoryCard.css";
@@ -106,7 +106,7 @@ const InventoryCard = (props) => {
       kms: 44607,
     },
   ];
-  const [products, setProducts] = useState();
+  // const [products, setProducts] = useState();
 
   const axios = require("axios");
   const url =

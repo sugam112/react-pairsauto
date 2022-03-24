@@ -14,9 +14,10 @@ exports.handler = async (event, _context) => {
     statusCode: 200,
     headers: {
       ...CORS_HEADERS,
+      "Content-Type": "application/xml; charset=utf-8",
     },
-    body: JSON.stringify({
+    body: {
       hello: "browser!",
-    }),
+    },
   };
 };

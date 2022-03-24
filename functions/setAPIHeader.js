@@ -13,7 +13,7 @@ exports.handler = async (event, _context) => {
   return {
     statusCode: 200,
     headers: {
-      ...CORS_HEADERS,
+      CORS_HEADERS,
       "Content-Type": "application/xml; charset=utf-8",
     },
     body: {

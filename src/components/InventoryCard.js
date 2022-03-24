@@ -122,14 +122,19 @@ const InventoryCard = (props) => {
 
   const fetchData = async (url) => {
     try {
-      axios.get(url, { method: "GET" }).then((response) => {
-        console.log(response);
-        console.log(response.data);
-        console.log(response.status);
-        console.log(response.statusText);
-        console.log(response.headers);
-        console.log(response.config);
-      });
+      axios
+        .get(url, {
+          "Access-Control-Allow-Origin": "*",
+          "Content-Type": "application/xml; charset=utf-8",
+        })
+        .then((response) => {
+          console.log(response);
+          console.log(response.data);
+          console.log(response.status);
+          console.log(response.statusText);
+          console.log(response.headers);
+          console.log(response.config);
+        });
     } catch (error) {
       if (error.response) {
         // The request was made and the server responded with a status code

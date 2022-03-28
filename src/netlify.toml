@@ -11,3 +11,11 @@ status = 200
   from = “/*”
   to = “/index.html”
   status = 200
+
+  [[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+
+  [headers.values]
+   Access-Control-Allow-Origin = "*"
+   Content-value="application/xml; charset=utf-8"

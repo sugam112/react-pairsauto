@@ -4,3 +4,4 @@
 
   [headers.values]
    Access-Control-Allow-Origin = "*"
+   Content-value="application/xml; charset=utf-8"

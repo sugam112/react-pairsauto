@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Card, Placeholder, Button, Row } from "react-bootstrap";
-// import Loader from "./Loader";
+import XMLParser from "react-xml-parser";
+import Loader from "./Loader";
 import "./InventoryCard.css";
 
 const InventoryCard = (props) => {
@@ -106,7 +107,7 @@ const InventoryCard = (props) => {
       kms: 44607,
     },
   ];
-  // const [products, setProducts] = useState();
+  const [vehicle, setVehicles] = useState();
 
   const axios = require("axios");
   const url =
@@ -117,75 +118,77 @@ const InventoryCard = (props) => {
   // console.log(products.data);
 
   useEffect(() => {
-    fetchData(url);
-  });
-
-  const fetchData = async (url) => {
-    try {
-      axios
-        .get(url, {
-          "Access-Control-Allow-Origin": "*",
-          "Content-Type": "application/xml; charset=utf-8",
-        })
-        .then((response) => {
-          console.log(response);
-          console.log(response.data);
-          console.log(response.status);
-          console.log(response.statusText);
-          console.log(response.headers);
-          console.log(response.config);
-        });
-    } catch (error) {
-      if (error.response) {
-        // The request was made and the server responded with a status code
-        // that falls out of the range of 2xx
-        console.log(error.response.data);
-        console.log(error.response.status);
-        console.log(error.response.headers);
-      } else if (error.request) {
-        // The request was made but no response was received
-        // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-        // http.ClientRequest in node.js
-        console.log(error.request);
-      } else {
-        // Something happened in setting up the request that triggered an Error
-        console.log("Error", error.message);
+    const fetchData = async (url) => {
+      try {
+        axios
+          .get(url, {
+            "Access-Control-Allow-Origin": "*",
+            "Content-Type": "application/xml; charset=utf-8",
+          })
+          .then((response) => {
+            // console.log(response);
+            // console.log(response.data);
+            // console.log(response.status);
+            // console.log(response.statusText);
+            // console.log(response.headers);
+            // console.log(response.config);
+            let res = response.data;
+            let data = new XMLParser().parseFromString(res);
+            if (
+              data.children !== null &&
+              data.children !== [] &&
+              data.children.length > 0
+            ) {
+              setVehicles(data.children);
+            } else {
+              console.log("Try again later");
+            }
+          });
+      } catch (error) {
+        if (error.response) {
+          // The request was made and the server responded with a status code
+          // that falls out of the range of 2xx
+          console.log(error.response.data);
+          console.log(error.response.status);
+          console.log(error.response.headers);
+        } else if (error.request) {
+          // The request was made but no response was received
+          // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+          // http.ClientRequest in node.js
+          console.log(error.request);
+        } else {
+          // Something happened in setting up the request that triggered an Error
+          console.log("Error", error.message);
+        }
+        console.log(error.config);
       }
-      console.log(error.config);
-    }
-  };
+    };
+    fetchData(url);
+  }, [axios]);
 
-  let content = null;
+  console.log(vehicle);
 
   return (
     <>
-      <div className="filter-container">
-        <input
-          type="text"
-          placeholder="Year / Make / Model"
-          className="p-2"
-          value={props.term}
-        ></input>
-      </div>
       <div className="inventory-container">
         <Row xs={1} md={2} className="g-0 d-flex justify-content-around">
-          {content ? (
-            dummy.map((dummyData) => {
+          {vehicle ? (
+            vehicle.map((car, index) => {
               return (
                 <Card
                   variant="top"
                   className="col-md-4 col-xl-3 col-12 m-2 card-decorations"
-                  key={dummyData.id}
+                  key={index}
                 >
                   <Card.Img variant="top" src="./images/card-1.png" />
                   <Card.Body>
-                    <Card.Title>{dummyData.car_make}</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">
-                      {dummyData.car_model} {dummyData.car_year}
+                    <Card.Title>{car.children[0].ID}</Card.Title>
+                    <Card.Subtitle className="mb-2">
+                      {car.children[10].value} {car.children[11].value}
                     </Card.Subtitle>
-                    <Card.Text> {dummyData.emi}/month</Card.Text>
-                    <Card.Text>{dummyData.price}</Card.Text>
-                    <Card.Text> {dummyData.kms} kms</Card.Text>
+                    <Card.Text> {car.children[10].value}/month</Card.Text>
+                    <Card.Text>{car.children[10].value}</Card.Text>
+                    <Card.Text> {car.children[10].value} kms</Card.Text>
                     <Button href="/contact-us" variant="primary">
                       More details
                     </Button>
@@ -194,20 +197,7 @@ const InventoryCard = (props) => {
               );
             })
           ) : (
-            <Card className="col-sm-6 col-md-4 col-xl-3 col-12">
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Placeholder as={Card.Title} animation="glow">
-                  <Placeholder xs={6} />
-                </Placeholder>
-                <Placeholder as={Card.Text} animation="glow">
-                  <Placeholder xs={7} /> <Placeholder xs={4} />{" "}
-                  <Placeholder xs={4} /> <Placeholder xs={6} />{" "}
-                  <Placeholder xs={8} />
-                </Placeholder>
-                <Placeholder.Button variant="primary" xs={6} />
-              </Card.Body>
-            </Card>
+            <Loader></Loader>
           )}
         </Row>
       </div>

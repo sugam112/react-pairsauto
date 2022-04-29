@@ -19,6 +19,15 @@
   text-transform: capitalize;
   text-decoration: underline;
 }
+.section-link, a:hover{
+  width: 100%;
+  color: #000;
+  text-decoration: none;
+  outline: 0;
+  border: none;
+  outline-style: none;
+  -moz-outline-style: none;
+}
 .section {
   border-radius: 10px;
   display: grid;

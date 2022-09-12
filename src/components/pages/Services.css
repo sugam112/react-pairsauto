@@ -1,6 +1,7 @@
 .service-container {
   margin: 20px;
   color: #000;
+  text-decoration: none;
 }
 .service-wrapper {
   display: flex;
@@ -19,7 +20,7 @@
   text-transform: capitalize;
   text-decoration: underline;
 }
-.section-link, a:hover{
+.section-link a:hover {
   width: 100%;
   color: #000;
   text-decoration: none;
@@ -28,6 +29,11 @@
   outline-style: none;
   -moz-outline-style: none;
 }
+.section-link {
+  width: 100%;
+  text-decoration: none;
+}
+
 .section {
   border-radius: 10px;
   display: grid;
@@ -36,13 +42,15 @@
   max-width: 1080px;
   /* grid-template-columns: 1fr 2fr; */
   grid-gap: 10px;
-  margin: 1rem 0;
+  margin: 1rem auto;
   padding: 2rem;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .details {
   margin: 10px 10px;
+  color: #000;
+  text-decoration: none;
 }
 .img-card {
   width: auto;
@@ -50,6 +58,7 @@
 }
 ul li {
   list-style: none;
+  text-decoration: none;
 }
 
 .bullet::before {
@@ -61,7 +70,6 @@ ul li {
   .section {
     display: flex;
     flex-direction: column;
-    width: 80%;
   }
 }
 @media screen and (max-width: 564px) {

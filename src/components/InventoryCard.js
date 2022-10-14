@@ -68,7 +68,7 @@ const InventoryCard = (props) => {
                   <ListGroup className="list-group-flush">
                     <ListGroup.Item>{element.Kilometers} Kms</ListGroup.Item>
                     <ListGroup.Item>
-                      {element.Transmission == ""
+                      {element.Transmission === ""
                         ? "Transmission info N/A"
                         : element.Transmission}{" "}
                       {element.Drivetrain}

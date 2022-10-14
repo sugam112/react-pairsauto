@@ -4,6 +4,7 @@ import "./Home.css";
 import Card from "../Card";
 import { Button } from "../Button";
 import ScrollArrow from "../ScrollArrow";
+
 // import HeroSection from "../HeroSection";
 
 function Home() {
